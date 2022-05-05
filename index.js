@@ -121,14 +121,14 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   //This function update the event on request.
   function updateBooking(agent) {
     var newEventId;
-	agent.add(`Successful! Your new booking Id is ${newEventId}`);
+    agent.add(`Successful! Your new booking Id is ${newEventId}`);
   }
   
   //This function provides the menu on request.
   function menuRequest(agent) {
-	const menuLink = "https://tinyurl.com/y6bvcmzd";
-	agent.add('Please click on the following link to see the menu');
-	agent.add(menuLink);
+    const menuLink = "https://tinyurl.com/y6bvcmzd";
+    agent.add('Please click on the following link to see the menu');
+    agent.add(menuLink);
   }
 	
   //This function return the price of the specific dish on request
@@ -173,7 +173,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   function getEndTime() {
   	if (isLunch()) 
       return new Date(new Date(startTime).setHours(15 - 10));
-	return new Date(new Date(startTime).setHours(21 - 10));    
+    return new Date(new Date(startTime).setHours(21 - 10));    
   }
   
   //This functions checks whether the booking time is lunch time or dinner time.  
@@ -251,6 +251,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
 });  
 
 
+// *** Sample command ***
 // Nguyen, 0416533779 book a table for 5 adults and 5 children at 18 tomorrow 
 // i want to cancel a booking 
 // i want to see the menu
