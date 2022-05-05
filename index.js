@@ -120,15 +120,15 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   
   //This function update the event on request.
   function updateBooking(agent) {
-	var newEventId;
-  	agent.add(`Successful! Your new booking Id is ${newEventId}`);
+    var newEventId;
+	agent.add(`Successful! Your new booking Id is ${newEventId}`);
   }
   
   //This function provides the menu on request.
   function menuRequest(agent) {
-  	const menuLink = "https://tinyurl.com/y6bvcmzd";
-    agent.add('Please click on the following link to see the menu');
-    agent.add(menuLink);
+	const menuLink = "https://tinyurl.com/y6bvcmzd";
+	agent.add('Please click on the following link to see the menu');
+	agent.add(menuLink);
   }
 	
   //This function return the price of the specific dish on request
