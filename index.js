@@ -158,7 +158,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     priceList.set('cocktails',"16$");
     priceList.set('wine',"10$");
     priceList.set('spirits',"10$");
-  	var dish = agent.parameters.dish;
+    var dish = agent.parameters.dish;
     var price = priceList.get(dish.toLowerCase());
     agent.add(`The price of ${dish} is ${price}`);
   }
