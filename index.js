@@ -10,16 +10,16 @@ const {WebhookClient} = require('dialogflow-fulfillment');
 const calendarId = "us5n7gdijfjud94992j9qu4fgk@group.calendar.google.com";
 const calendarID = 'us5n7gdijfjud94992j9qu4fgk@group.calendar.google.com';
 const serviceAccount = {
-    "type": "service_account",
-    "project_id": "restaurant-booking-7e726",
-    "private_key_id": "8fc31da4ebdf43ecc5f9713137f476cccc044f46",
-    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDDcM7QiZ7lOKyD\ndU27ghp/krrcZyvo7PZSNOOIr0vJYjwTafCpb5sBknjNq44LxSprtXLVBJKYGNMB\nCXefip3BlawlhSDcBbwfhfjKj6LkU7ZuRyDfRQJVcB4fWt9+fZj4z/EIJCmX85p+\n8SyDr5Kh4GlCic6YX4TBGeUe2Pl70WEYNrp3+oI1Aq4/Deorez7y7hnfuW5BLG3K\n+OEui2LS0n5ilH5n+y+VjOrzoe9VZwbCVSb/3Mulx4nfD7e0ajwJ9xlBYJENwnJC\neM2hGCrjNKa3/oU+VdSGhbuCebKXfqv6Vj40yuknf2j7AXxFn9SWrHkg3j3g6JZj\ni5xLpAS7AgMBAAECggEARMxLIUGwu4QNxmDesikEZvAh80AmRuJTe3C+v/jlNsjr\n2PGsFBkDebQz7kJ7yEzpt+yxtabca8ohTPYmM/U5v1GOvc51WL50EKy6faO+dZ26\nVGuZeL70KVtEX0k/72kLFlssv+7q7WCFfDYts1V0yqMSqqeUIDNPqiIRc6BxglH+\nxb5dvMBS50lLUFJ8qc1JiVUAHYiPZzkQa9YEBTIExJasmFARzOf+NN95VJuwyjB4\n89zWalHz1qcd+sD96rrZAENmqCHJ40uwsxhE0XLvUq5XmLP3VdpUc5HOLk+YiFki\nQ2yEOuhAGv4KSuvrLp4fLnz09CNJuSU9aX4XWWMJAQKBgQDnvxDF7vruczOh8kdE\nCadJSHwrrJatVy3p3hfWnqB5J+RtryXyWCyqCxIs4bSYaR7zHUFbzLGLIZS8WHMH\nRXEGnS2Aj8Kz8TX8CZSxw+axEcsXlOplr71Z2eHXB5N4+C8UtZX+m++WcE7RSoVh\nS5hMrotN3mb1Ss5Y2smifkUcwQKBgQDX5QrXOkF5FcORQ63NvngQfZvLD9GVCk1w\nUZC5p3EuywzEhcAmlUHqIjgBP5FEIGZQRfWE2zwjrjjVGF32olIB1diiIZO4nRjb\nWTdKVwmQTdqhi79HG4bmEalPeQmdNFIR27k3jBzIPNYeR/8LetMzhV4j5shbd9Hz\nVXPHhJg0ewKBgQC6RLRyo3dFmYryrA3j/e5b1MsZP4uMn/njdAOtGaraNto/3vud\nIooj0uo08OV7a2LY/ba+1nQN5FvsVxt9yK7kJgmgv+w7PbGqdvjxOQh/YlHfDm6o\ndOy4/4uqjghWvwT4nEuHbkbQoEx5pHA4l84+NDz7xbrzhcD9Yj2XQe7DAQKBgHaA\n9WtgQbH6HUfuM0ecxgCfQdW7UBoT9p+xVdRiMYEy2UZB+E/1W6HtuHoO72jKs/5Z\n+EM9p4waRH3Li0Ampwb0351W+uO573vvQ6cdkVVRNrG3qH2agXhlt161HG7a2jWN\nOuRflyjeI9WpRTiC6cz85sikE9QJOAfuHsgkYvtjAoGAbiEumSV8/lZXW1mtplYN\npIg4jqmv8grXlEfrh2G/R8/FgTIWJA+STmO49emEWosEPcbs0DNU1RbBFb8CL4mx\nEJHYwvdGed7xmJyyLYNTCmp7Mg9jSLjnOGmh+sUj34QMQnA5n2dfkOjXJIO0W1uc\n2oYBsck8YYsTwBMw+7R+EY8=\n-----END PRIVATE KEY-----\n",
-    "client_email": "restaurant-booking-calendar@restaurant-booking-7e726.iam.gserviceaccount.com",
-    "client_id": "105805538511090550919",
-    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/restaurant-booking-calendar%40restaurant-booking-7e726.iam.gserviceaccount.com"
+  "type": "service_account",
+  "project_id": "restaurant-booking-7e726",
+  "private_key_id": "8fc31da4ebdf43ecc5f9713137f476cccc044f46",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDDcM7QiZ7lOKyD\ndU27ghp/krrcZyvo7PZSNOOIr0vJYjwTafCpb5sBknjNq44LxSprtXLVBJKYGNMB\nCXefip3BlawlhSDcBbwfhfjKj6LkU7ZuRyDfRQJVcB4fWt9+fZj4z/EIJCmX85p+\n8SyDr5Kh4GlCic6YX4TBGeUe2Pl70WEYNrp3+oI1Aq4/Deorez7y7hnfuW5BLG3K\n+OEui2LS0n5ilH5n+y+VjOrzoe9VZwbCVSb/3Mulx4nfD7e0ajwJ9xlBYJENwnJC\neM2hGCrjNKa3/oU+VdSGhbuCebKXfqv6Vj40yuknf2j7AXxFn9SWrHkg3j3g6JZj\ni5xLpAS7AgMBAAECggEARMxLIUGwu4QNxmDesikEZvAh80AmRuJTe3C+v/jlNsjr\n2PGsFBkDebQz7kJ7yEzpt+yxtabca8ohTPYmM/U5v1GOvc51WL50EKy6faO+dZ26\nVGuZeL70KVtEX0k/72kLFlssv+7q7WCFfDYts1V0yqMSqqeUIDNPqiIRc6BxglH+\nxb5dvMBS50lLUFJ8qc1JiVUAHYiPZzkQa9YEBTIExJasmFARzOf+NN95VJuwyjB4\n89zWalHz1qcd+sD96rrZAENmqCHJ40uwsxhE0XLvUq5XmLP3VdpUc5HOLk+YiFki\nQ2yEOuhAGv4KSuvrLp4fLnz09CNJuSU9aX4XWWMJAQKBgQDnvxDF7vruczOh8kdE\nCadJSHwrrJatVy3p3hfWnqB5J+RtryXyWCyqCxIs4bSYaR7zHUFbzLGLIZS8WHMH\nRXEGnS2Aj8Kz8TX8CZSxw+axEcsXlOplr71Z2eHXB5N4+C8UtZX+m++WcE7RSoVh\nS5hMrotN3mb1Ss5Y2smifkUcwQKBgQDX5QrXOkF5FcORQ63NvngQfZvLD9GVCk1w\nUZC5p3EuywzEhcAmlUHqIjgBP5FEIGZQRfWE2zwjrjjVGF32olIB1diiIZO4nRjb\nWTdKVwmQTdqhi79HG4bmEalPeQmdNFIR27k3jBzIPNYeR/8LetMzhV4j5shbd9Hz\nVXPHhJg0ewKBgQC6RLRyo3dFmYryrA3j/e5b1MsZP4uMn/njdAOtGaraNto/3vud\nIooj0uo08OV7a2LY/ba+1nQN5FvsVxt9yK7kJgmgv+w7PbGqdvjxOQh/YlHfDm6o\ndOy4/4uqjghWvwT4nEuHbkbQoEx5pHA4l84+NDz7xbrzhcD9Yj2XQe7DAQKBgHaA\n9WtgQbH6HUfuM0ecxgCfQdW7UBoT9p+xVdRiMYEy2UZB+E/1W6HtuHoO72jKs/5Z\n+EM9p4waRH3Li0Ampwb0351W+uO573vvQ6cdkVVRNrG3qH2agXhlt161HG7a2jWN\nOuRflyjeI9WpRTiC6cz85sikE9QJOAfuHsgkYvtjAoGAbiEumSV8/lZXW1mtplYN\npIg4jqmv8grXlEfrh2G/R8/FgTIWJA+STmO49emEWosEPcbs0DNU1RbBFb8CL4mx\nEJHYwvdGed7xmJyyLYNTCmp7Mg9jSLjnOGmh+sUj34QMQnA5n2dfkOjXJIO0W1uc\n2oYBsck8YYsTwBMw+7R+EY8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "restaurant-booking-calendar@restaurant-booking-7e726.iam.gserviceaccount.com",
+  "client_id": "105805538511090550919",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/restaurant-booking-calendar%40restaurant-booking-7e726.iam.gserviceaccount.com"
 };
 
 // Set up Google Calendar Service account credentials
@@ -251,7 +251,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
 });  
 
 
-// *** Sample command ***
+// *** Sample commands ***
 // Nguyen, 0416533779 book a table for 5 adults and 5 children at 18 tomorrow 
 // i want to cancel a booking 
 // i want to see the menu
